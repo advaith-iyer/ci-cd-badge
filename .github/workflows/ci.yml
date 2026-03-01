@@ -1,0 +1,15 @@
+name: CI Workflow
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run CI with email 25f1002024@ds.study.iitm.ac.in
+        run: echo "CI workflow running successfully"
